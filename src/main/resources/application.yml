@@ -5,12 +5,12 @@ spring:
         - id: msvc-products
           uri: lb://msvc-products
           predicates:
-          - Path=/api/products/**
+            - Path=/api/products/**
           filters:
-          - StripPrefix=2
+            - StripPrefix=2
         - id: msvc-items
           uri: lb://msvc-items
           predicates:
-          - Path=/api/items/**
+            - Path=/api/items/**
           filters:
-          - StripPrefix=2
+            - StripPrefix=2
